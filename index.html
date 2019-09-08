@@ -12,6 +12,12 @@
       </a-assets>
     <a-plane material="src:#floor; repeat: 700 700; transparent: true;" height="500" width="500" rotation="-90 0 0"></a-plane>
     <a-sky color="#222222"></a-sky>
+    <a-entity id="cameraRig">
+        <a-camera id="camera">
+        </a-camera>
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .screen"></a-entity>
+        <a-entity laser-controls raycaster="objects: .screen;"></a-entity>
+      </a-entity>
     <a-entity position="0 1.6 -1" htmlembed>
 		<p>My HTML</p>
 	</a-entity>
