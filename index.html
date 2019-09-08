@@ -15,8 +15,9 @@
     <a-plane material="src:#floor; repeat: 700 700; transparent: true;" height="500" width="500" rotation="-90 0 0"></a-plane>
     <a-sky color="#222222"></a-sky>
     <a-entity id="cameraRig">
-        <a-camera id="head">
-        </a-camera>
+        <a-camera id="head"></a-camera>
+        <a-entity oculus-touch-controls="hand: left"></a-entity>
+        <a-entity oculus-touch-controls="hand: right"></a-entity>
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .screen"></a-entity>
         <a-entity laser-controls raycaster="objects: .screen;"></a-entity>
 	<a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
